@@ -12,6 +12,16 @@
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
+\usepackage{graphicx}
+
+% Uses Ethereum colorful logo instead of bullet, for all item levels.
+\defbeamertemplate{itemize item}{image}{\small\includegraphics[height=1.6ex]{bullet}}
+\defbeamertemplate{itemize subitem}{image}{\scriptsize\includegraphics[height=1.6ex]{bullet}}
+\defbeamertemplate{itemize subsubitem}{image}{\tiny\includegraphics[height=1.6ex]{bullet}}
+\setbeamertemplate{itemize item}[image]
+\setbeamertemplate{itemize subitem}[image]
+\setbeamertemplate{itemize subsubitem}[image]
+
 % Sets the template background image for all the slides.
 % Change opacity here.
 \setbeamertemplate{background}{\tikz\node[opacity=0.2]{\includegraphics[width=\paperwidth,height=\paperheight]{bg}};}
