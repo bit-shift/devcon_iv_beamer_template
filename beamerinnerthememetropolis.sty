@@ -260,7 +260,6 @@
   \booltrue{metropolis@standout}
   \begingroup
     \setkeys{beamerframe}{c}
-    \setkeys{beamerframe}{noframenumbering}
     \ifbeamercolorempty[bg]{palette primary}{
       \setbeamercolor{background canvas}{
         use=palette primary,
@@ -273,6 +272,9 @@
       }
     }
     \setbeamercolor{local structure}{
+      fg=palette primary.fg
+    }
+    \setbeamercolor{frame numbering}{
       fg=palette primary.fg
     }
     \usebeamercolor[fg]{palette primary}
