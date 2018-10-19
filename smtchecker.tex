@@ -12,29 +12,20 @@
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
-%\setbeamertemplate{title graphicNew}{
-%  \hbox to 0pt {
-%    \hspace*{5.5em}
-%  	\vbox to 0pt {
-%    	\vspace*{-23em}
-%	    \inserttitlegraphic%
-%	  }%
-%	}%
-%    \nointerlineskip%
-%}
-
-%\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{bg}}
-%\setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight]{bg}}
+% Change opacity here.
 \setbeamertemplate{background}{\tikz\node[opacity=0.2]{\includegraphics[width=\paperwidth,height=\paperheight]{bg}};}
-%\setbeamercolor{background canvas}{bg=black}
+%
 
+% Change here for light theme.
 \metroset{background=dark,sectionpage=none}
 \usebeamercolor[fg]{normal text}
+%
 
-\title{Using Solidity's SMTChecker}
-\date{devcon iv - 03/11/2018}
-\author{Leonardo Alt    leo@ethereum.org}
-\institute{Ethereum Foundation}
+% Change presentation data here.
+\title{{\Huge Using Solidity's\\SMTChecker}}
+\author{{\large Leonardo Alt}}
+\institute{{\large Ethereum Foundation}}
+%
 \titlegraphic{\vfill\includegraphics[height=1.0cm]{devcon.png}}
 
 \begin{document}
