@@ -12,20 +12,33 @@
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
+% Sets the template background image for all the slides.
 % Change opacity here.
 \setbeamertemplate{background}{\tikz\node[opacity=0.2]{\includegraphics[width=\paperwidth,height=\paperheight]{bg}};}
 
+% Sets the color theme.
 % Change here for light theme.
+% `sectionpage=none` removes slide between sections.
+% Remove if you want those.
 \metroset{background=dark,sectionpage=none}
 \usebeamercolor[fg]{normal text}
+
+% Sets the footer `devcon iv` on the bottom right.
+% Change `devcon iv` text color here.
+\setbeamercolor{frame footer}{fg=gray}
+\setbeamertemplate{frame footer}{devcon iv}
 
 % Change presentation data here.
 \title{{\Huge Using Solidity's\\SMTChecker}}
 \author{{\large Leonardo Alt}}
-% Change date here. Empty date removes it from the frame. \today prints compilation date. Otherwise prints content.
+% Change date here.
+% Empty date removes it from the frame.
+% \date{\today} prints compilation date.
+%Otherwise prints content.
 \date{} %\date{\today}
 \institute{{\large Ethereum Foundation}}
-\titlegraphic{\vfill\includegraphics[height=1.0cm]{devcon.png}}
+% Sets the Ethereum/devcon logo on the upper left.
+\titlegraphic{\vfill\includegraphics[height=1.2cm]{devcon.png}}
 
 \begin{document}
 
