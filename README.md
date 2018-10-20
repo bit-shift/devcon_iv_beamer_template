@@ -15,6 +15,7 @@ The following features are present for Beamer:
 - Standout slide
 - Large logo on the right side of title frame
 - Colorful bar on section break
+- GitHub, email and Twitter info on title
 
 To do:
 - Use better images for template background, title image and standout background
