@@ -8,19 +8,19 @@ The template uses the Metropolis theme.
 #### Features
 
 The following features are present for Beamer:
-- Dark theme
+- Dark/light theme
 - Small logo on top left of title frame
 - Template background for all slides
 - Colorful logo instead of item bullets
 - Standout slide
 - Large logo on the right side of title frame
 - Colorful bar on section break
-- GitHub, email and Twitter info on title
+- GitHub, Email and Twitter info on title frame
 
 To do:
 - Use better images for template background, title image and standout background
-- Light theme
 - Fonts
+- Use correct GitHub/Email/Twitter icons depending on theme automatically
  
 What will not be done:
 - Diagrams
