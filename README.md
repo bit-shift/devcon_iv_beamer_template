@@ -8,7 +8,7 @@ The template uses the Metropolis theme.
 #### Features
 
 The following features are present for Beamer:
-- Dark/light themes
+- Dark theme
 - Small logo on top left of title frame
 - Template background for all slides
 - Colorful logo instead of item bullets
@@ -16,8 +16,8 @@ The following features are present for Beamer:
 - Large logo on the right side of title frame
 
 To do:
-- Change dark theme to use black
 - Use better images for template background, title image and standout background
+- Light theme
 - Fonts
 - Colorful bar on section break
  
