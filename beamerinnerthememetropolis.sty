@@ -128,12 +128,10 @@
   \end{center}
 }
 \defbeamertemplate{section page}{progressbar}{
-  \centering
-  \begin{minipage}{22em}
-    \raggedright
+  \begin{center}
     \usebeamercolor[fg]{section title}
     \usebeamerfont{section title}
-    \insertsectionhead\\[-1ex]
+	\insertsectionhead\\[-0.1em]
     \usebeamertemplate*{progress bar in section page}
     \par
     \ifx\insertsubsectionhead\@empty\else%
@@ -141,9 +139,7 @@
       \usebeamerfont{subsection title}%
       \insertsubsectionhead
     \fi
-  \end{minipage}
-  \par
-  \vspace{\baselineskip}
+  \end{center}
 }
 \newcommand{\metropolis@disablesectionpage}{
   \AtBeginSection{
@@ -176,19 +172,12 @@
     \fi
   }
 }
-\newlength{\metropolis@progressonsectionpage}
-\newlength{\metropolis@progressonsectionpage@linewidth}
-\setlength{\metropolis@progressonsectionpage@linewidth}{0.4pt}
 \setbeamertemplate{progress bar in section page}{
-  \setlength{\metropolis@progressonsectionpage}{%
-    \textwidth * \ratio{\insertframenumber pt}{\inserttotalframenumber pt}%
-  }%
-  \tikzexternaldisable%
-  \begin{tikzpicture}
-    \fill[bg] (0,0) rectangle (\textwidth, \metropolis@progressonsectionpage@linewidth);
-    \fill[fg] (0,0) rectangle (\metropolis@progressonsectionpage, \metropolis@progressonsectionpage@linewidth);
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[at=(current page.center)]{
+		\includegraphics[width=\paperwidth,height=0.1cm]{images/rainbow_bar}
+	};
   \end{tikzpicture}%
-  \tikzexternalenable%
 }
 \def\inserttotalframenumber{100}
 \newlength{\metropolis@blocksep}
@@ -264,9 +253,9 @@
 	\setbeamertemplate{background}{%
 		\begin{tikzpicture}[remember picture,overlay]
 			\node[at=(current page.center)]{
-				\includegraphics[width=\paperwidth,height=\paperheight]{images/standout_bg}
+				\includegraphics[width=\paperwidth,height=\paperheight]{images/rainbow_bg}
 			};
-			\node[at=(current page.center),opacity=0.6]{
+			\node[at=(current page.center),opacity=0.4]{
 				\includegraphics[width=\paperwidth,height=\paperheight]{images/bg}
 			};
 		\end{tikzpicture}

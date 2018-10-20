@@ -14,12 +14,12 @@ The following features are present for Beamer:
 - Colorful logo instead of item bullets
 - Standout slide
 - Large logo on the right side of title frame
+- Colorful bar on section break
 
 To do:
 - Use better images for template background, title image and standout background
 - Light theme
 - Fonts
-- Colorful bar on section break
  
 What will not be done:
 - Diagrams
@@ -30,8 +30,26 @@ These can be done using standard Beamer and Tikz features.
 
 #### Usage
 
-Please see `template.tex` for the usage and how to change whatever you might
-want to change.
+##### Dark/Light theme
+Change the color theme with `\metroset{background=theme}` where `theme` may be
+`dark` or `light`. Default is `dark`.
+
+##### Section page
+Change the section page with `\metroset{sectionpage=page}` where `page` may be
+`none` (no section page), `simple` (just section name) or `progressbar` (uses
+colorful bar). Default is `progressbar`.
+
+##### Standout slide
+Apply `[standout]` to a frame. Example:
+```
+\begin{frame}[standout]
+Really important thing!!
+\end{frame}
+```
+
+Please see `template.tex` for examples and how to change whatever you might
+want to change regarding images, opacity, etc.
+Also, check Metropolis' documentation for full usage.
 
 #### Compilation
 
