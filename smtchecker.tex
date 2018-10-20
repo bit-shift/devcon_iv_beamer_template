@@ -24,7 +24,14 @@
 
 % Sets the template background image for all the slides.
 % Change opacity here.
-\setbeamertemplate{background}{\tikz\node[opacity=0.2]{\includegraphics[width=\paperwidth,height=\paperheight]{images/bg}};}
+\setbeamertemplate{background}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[at=(current page.center),opacity=0.2]{
+			\includegraphics[width=\paperwidth,height=\paperheight]{images/bg}
+		};
+	\end{tikzpicture}
+}
+
 
 % Sets the color theme.
 % Change here for light theme.
@@ -57,6 +64,10 @@
 \maketitle
 \end{frame}
 }
+
+\begin{frame}[standout]
+Here's a really important statement that you want to emphasize.
+\end{frame}
 
 \section{Introduction}
 

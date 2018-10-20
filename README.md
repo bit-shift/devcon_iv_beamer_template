@@ -12,9 +12,9 @@ The following features are present for Beamer:
 - Small logo on top left of title frame
 - Template background for all slides
 - Colorful logo instead of item bullets
+- Standout slide
 
 To do:
-- Standout slide
 - Fonts
 - Large logo on the right side of title frame
 - Colorful bar on section break

@@ -260,24 +260,35 @@
   \booltrue{metropolis@standout}
   \begingroup
     \setkeys{beamerframe}{c}
-    \ifbeamercolorempty[bg]{palette primary}{
-      \setbeamercolor{background canvas}{
-        use=palette primary,
-        bg=-palette primary.fg
-      }
-    }{
-      \setbeamercolor{background canvas}{
-        use=palette primary,
-        bg=palette primary.bg
-      }
-    }
-    \setbeamercolor{local structure}{
-      fg=palette primary.fg
-    }
-    \setbeamercolor{frame numbering}{
-      fg=palette primary.fg
-    }
-    \usebeamercolor[fg]{palette primary}
+	%
+	\setbeamertemplate{background}{%
+		\begin{tikzpicture}[remember picture,overlay]
+			\node[at=(current page.center)]{
+				\includegraphics[width=\paperwidth,height=\paperheight]{images/standout_bg}
+			};
+			\node[at=(current page.center),opacity=0.8]{
+				\includegraphics[width=\paperwidth,height=\paperheight]{images/bg}
+			};
+		\end{tikzpicture}
+	}
+	% Comment the previous command `\setbeamertemplate` entirely
+	% and uncomment the lines below to use
+	% the standard `standout`, i.e. the opposite theme as the main one.
+    %\ifbeamercolorempty[bg]{palette primary}{
+    %  \setbeamercolor{background canvas}{
+    %    use=palette primary,
+    %    bg=-palette primary.fg
+    %  }
+    %}{
+    %  \setbeamercolor{background canvas}{
+    %    use=palette primary,
+    %    bg=palette primary.bg
+    %  }
+    %}
+    %\setbeamercolor{local structure}{
+    %  fg=palette primary.fg
+    %}
+    %\usebeamercolor[fg]{palette primary}
 }
   \pretocmd{\beamer@reseteecodes}{%
     \ifbool{metropolis@standout}{
