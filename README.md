@@ -13,10 +13,12 @@ The following features are present for Beamer:
 - Template background for all slides
 - Colorful logo instead of item bullets
 - Standout slide
+- Large logo on the right side of title frame
 
 To do:
+- Change dark theme to use black
+- Use better images for template background, title image and standout background
 - Fonts
-- Large logo on the right side of title frame
 - Colorful bar on section break
  
 What will not be done:
@@ -24,7 +26,7 @@ What will not be done:
 - Timeline
 - Boxes
 
-These can be done using standard Beamer features.
+These can be done using standard Beamer and Tikz features.
 
 #### Usage
 

@@ -60,6 +60,16 @@
 \begin{document}
 
 {
+\setbeamertemplate{background}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[at=(current page.center),opacity=0.1]{
+			\includegraphics[width=\paperwidth,height=\paperheight]{images/bg}
+		};
+		\node[opacity=0.9] at (11.5,-2) {
+			\includegraphics[keepaspectratio,scale=0.25]{images/title_logo}
+		};
+	\end{tikzpicture}
+}
 \begin{frame}
 \maketitle
 \end{frame}
