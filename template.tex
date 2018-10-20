@@ -15,12 +15,13 @@
 \usepackage{graphicx}
 
 % Uses Ethereum colorful logo instead of bullet, for all item levels.
-\defbeamertemplate{itemize item}{image}{\small\includegraphics[height=1.6ex]{images/bullet}}
-\defbeamertemplate{itemize subitem}{image}{\scriptsize\includegraphics[height=1.6ex]{images/bullet}}
-\defbeamertemplate{itemize subsubitem}{image}{\tiny\includegraphics[height=1.6ex]{images/bullet}}
+\defbeamertemplate{itemize item}{image}{\large\includegraphics[height=1.6ex]{images/bullet}}
+\defbeamertemplate{itemize subitem}{image}{\large\includegraphics[height=1.6ex]{images/bullet}}
+\defbeamertemplate{itemize subsubitem}{image}{\large\includegraphics[height=1.6ex]{images/bullet}}
 \setbeamertemplate{itemize item}[image]
 \setbeamertemplate{itemize subitem}[image]
 \setbeamertemplate{itemize subsubitem}[image]
+
 
 % Sets the template background image for all the slides.
 % Change opacity here.
@@ -102,93 +103,48 @@
 \end{frame}
 }
 
+\begin{frame}{This is a slide with a large block of text}
+\begin{block}{}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit
+esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+\end{block}
+\end{frame}
+
+\begin{frame}{This is a slide with bulleted text}
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.
+	\begin{itemize}
+	\item Ut enim ad minim veniam, quis nostrud exercitation.
+	\end{itemize}
+\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+	dolore eu fugiat nulla pariatur.
+\item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+	deserunt mollit anim id est laborum.
+\end{itemize}
+\end{frame}
+
 \begin{frame}[standout]
 Here's a really important statement that you want to emphasize.
 \end{frame}
 
-\section{Introduction}
-
-\begin{frame}[fragile]
-
-  The \themename theme is a Beamer theme with minimal visual noise
-  inspired by the \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer
-  Theme} by Benjamin Weiss.
-
-  Enable the theme by loading
-
-  \begin{verbatim}    \documentclass{beamer}
-    \usetheme{metropolis}\end{verbatim}
-
-  Note, that you have to have Mozilla's \emph{Fira Sans} font and XeTeX
-  installed to enjoy this wonderful typography.
-\end{frame}
-\begin{frame}[fragile]{Sections}
-  Sections group slides of the same topic
-
-  \begin{verbatim}    \section{Elements}\end{verbatim}
-
-  for which \themename provides a nice progress indicator \ldots
-\end{frame}
-
-\section{Title formats}
-
-\begin{frame}{Metropolis title formats}
-	\themename supports 4 different title formats:
-	\begin{itemize}
-		\item Regular
-		\item \textsc{Small caps}
-		\item \textsc{all small caps}
-		\item ALL CAPS
-	\end{itemize}
-	They can either be set at once for every title type or individually.
-\end{frame}
-
-{
-    \metroset{titleformat frame=smallcaps}
-\begin{frame}{Small caps}
-	This frame uses the \texttt{smallcaps} title format.
-
-	\begin{alertblock}{Potential Problems}
-		Be aware that not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in small caps will be typeset with the Computer Modern Serif font instead.
-	\end{alertblock}
-\end{frame}
-}
-
-{
-\metroset{titleformat frame=allsmallcaps}
-\begin{frame}{All small caps}
-	This frame uses the \texttt{allsmallcaps} title format.
-
-	\begin{alertblock}{Potential problems}
-		As this title format also uses small caps you face the same problems as with the \texttt{smallcaps} title format. Additionally this format can cause some other problems. Please refer to the documentation if you consider using it.
-
-		As a rule of thumb: just use it for plaintext-only titles.
-	\end{alertblock}
-\end{frame}
-}
-
-{
-\metroset{titleformat frame=allcaps}
-\begin{frame}{All caps}
-	This frame uses the \texttt{allcaps} title format.
-
-	\begin{alertblock}{Potential Problems}
-		This title format is not as problematic as the \texttt{allsmallcaps} format, but basically suffers from the same deficiencies. So please have a look at the documentation if you want to use it.
-	\end{alertblock}
-\end{frame}
-}
-
 \section{Elements}
 
 \begin{frame}[fragile]{Typography}
-      \begin{verbatim}The theme provides sensible defaults to
-\emph{emphasize} text, \alert{accent} parts
-or show \textbf{bold} results.\end{verbatim}
+\begin{verbatim}The theme provides sensible defaults to \emph{emphasize}
+text, \alert{accent} parts or show \textbf{bold} results.\end{verbatim}
 
-  \begin{center}becomes\end{center}
+\begin{center}becomes\end{center}
 
-  The theme provides sensible defaults to \emph{emphasize} text,
-  \alert{accent} parts or show \textbf{bold} results.
+The theme provides sensible defaults to \emph{emphasize} text,
+\alert{accent} parts or show \textbf{bold} results.
 \end{frame}
 
 \begin{frame}{Font feature test}
@@ -373,20 +329,6 @@ or show \textbf{bold} results.\end{verbatim}
 
 \section{Conclusion}
 
-\begin{frame}{Summary}
-
-  Get the source of this theme and the demo presentation from
-
-  \begin{center}\url{github.com/matze/mtheme}\end{center}
-
-  The theme \emph{itself} is licensed under a
-  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
-  Attribution-ShareAlike 4.0 International License}.
-
-  \begin{center}\ccbysa\end{center}
-
-\end{frame}
-
 \begin{frame}[standout]
   Questions?
 \end{frame}
@@ -406,7 +348,7 @@ or show \textbf{bold} results.\end{verbatim}
 
 \begin{frame}[allowframebreaks]{References}
 
-  \bibliography{demo}
+  \bibliography{template}
   \bibliographystyle{abbrv}
 
 \end{frame}

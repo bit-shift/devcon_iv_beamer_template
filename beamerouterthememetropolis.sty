@@ -76,7 +76,7 @@
   \end{beamercolorbox}%
 }
 \newlength{\metropolis@frametitle@padding}
-\setlength{\metropolis@frametitle@padding}{2.2ex}
+\setlength{\metropolis@frametitle@padding}{5ex}
 \newcommand{\metropolis@frametitlestrut@start}{
   \rule{0pt}{\metropolis@frametitle@padding +%
     \totalheightof{%
@@ -88,7 +88,7 @@
   \rule[-\metropolis@frametitle@padding]{0pt}{\metropolis@frametitle@padding}
 }
 \defbeamertemplate{frametitle}{plain}{%
-  \nointerlineskip%
+  %\nointerlineskip%
   \begin{beamercolorbox}[%
       wd=\paperwidth,%
       sep=0pt,%
@@ -98,7 +98,7 @@
   \metropolis@frametitlestrut@start%
   \insertframetitle%
   \nolinebreak%
-  \metropolis@frametitlestrut@end%
+  %\metropolis@frametitlestrut@end%
   \end{beamercolorbox}%
 }
 \setbeamertemplate{frametitle continuation}{%
