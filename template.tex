@@ -46,6 +46,30 @@
 \setbeamercolor{frame footer}{fg=gray}
 \setbeamertemplate{frame footer}{devcon iv}
 
+% Change your GitHub username here.
+\setbeamertemplate{github}{
+  \normalsize\includegraphics[height=1.6ex]{icons/github_white}
+  mycodername
+}
+% Change your email here.
+\setbeamertemplate{email}{
+  \normalsize\includegraphics[height=1.6ex]{icons/email_white}
+  me@email.org
+}
+% Change your twitter account here.
+\setbeamertemplate{twitter}{
+  \normalsize\includegraphics[height=1.6ex]{icons/twitter_white}
+  myinternetname
+}
+
+% Remove here any contact you do not want to show.
+\setbeamertemplate{contact}{
+  \vspace*{1mm}
+  \usebeamertemplate{github}\\
+  \usebeamertemplate{email}\\
+  \usebeamertemplate{twitter}
+}
+
 % Change presentation data here.
 \title{{\Huge This is the name\\of my talk}}
 \author{{\large Firstname Lastname}}
