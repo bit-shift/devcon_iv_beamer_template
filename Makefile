@@ -1,6 +1,6 @@
 all:
-	pdflatex smtchecker.tex
-	pdflatex smtchecker.tex
+	pdflatex template.tex
+	pdflatex template.tex
 
 clean:
-	rm smtchecker.vrb smtchecker.toc smtchecker.snm smtchecker.out smtchecker.nav smtchecker.aux smtchecker.pdf smtchecker.log
+	rm template.vrb template.toc template.snm template.out template.nav template.aux template.pdf template.log
