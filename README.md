@@ -16,11 +16,10 @@ The following features are present for Beamer:
 - Large logo on the right side of title frame
 - Colorful bar on section break
 - GitHub, Email and Twitter info on title frame
-- Most elements use the correct font.
+- New fonts
 
 To do:
 - Use better images for template background, title image and standout background
-- Fonts missing for elements: regular text.
 - Use correct GitHub/Email/Twitter icons depending on theme automatically
 - The text colors are not really white, fix that
  

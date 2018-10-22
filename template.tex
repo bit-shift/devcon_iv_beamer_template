@@ -53,6 +53,7 @@
 \setsansfont{Circular Std Bold}
 \setmonofont{Overpass Mono}
 
+\setbeamerfont{frame content}{family=\ttfamily}
 % Sets the default line spacing.
 \setstretch{1.5}
 
@@ -60,6 +61,10 @@
 \AtBeginEnvironment{table}{\ttfamily}
 \AtBeginEnvironment{quote}{\ttfamily}
 \AtBeginEnvironment{figure}{\ttfamily}
+
+% Sets the normal text font as monospace.
+\setbeamerfont{normal text}{family=\ttfamily}
+\AtBeginDocument{\usebeamerfont{normal text}}
 
 % If you use the light theme, you need to manually change the
 % icons to `_black`.
@@ -160,21 +165,6 @@ text, \alert{accent} parts or show \textbf{bold} results.\end{verbatim}
 
 The theme provides sensible defaults to \emph{emphasize} text,
 \alert{accent} parts or show \textbf{bold} results.
-\end{frame}
-
-\begin{frame}{Font feature test}
-  \begin{itemize}
-    \item Regular
-    \item \textit{Italic}
-    \item \textsc{Small Caps}
-    \item \textbf{Bold}
-    \item \textbf{\textit{Bold Italic}}
-    \item \textbf{\textsc{Bold Small Caps}}
-    \item \texttt{Monospace}
-    \item \texttt{\textit{Monospace Italic}}
-    \item \texttt{\textbf{Monospace Bold}}
-    \item \texttt{\textbf{\textit{Monospace Bold Italic}}}
-  \end{itemize}
 \end{frame}
 
 \begin{frame}{Lists}
