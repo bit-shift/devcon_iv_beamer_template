@@ -13,6 +13,8 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{setspace}
 
 % Uses Ethereum colorful logo instead of bullet, for all item levels.
 \defbeamertemplate{itemize item}{image}{\large\includegraphics[height=1.6ex]{images/bullet}}
@@ -47,22 +49,27 @@
 \setbeamercolor{frame footer}{fg=gray}
 \setbeamertemplate{frame footer}{devcon iv}
 
+\setsansfont{Circular Std Bold}
+\setmonofont{Overpass Mono}
+
+\setstretch{1.5}
+
 % If you use the light theme, you need to manually change the
 % icons to `_black`.
 % Change your GitHub username here.
 \setbeamertemplate{github}{
-  \normalsize\includegraphics[height=1.6ex]{icons/github_white}
-  mycodername
+  \small\includegraphics[height=1.6ex]{icons/github_white}
+  \texttt{mycodername}
 }
 % Change your email here.
 \setbeamertemplate{email}{
-  \normalsize\includegraphics[height=1.6ex]{icons/email_white}
-  me@email.org
+  \small\includegraphics[height=1.6ex]{icons/email_white}
+  \texttt{me@email.org}
 }
 % Change your twitter account here.
 \setbeamertemplate{twitter}{
-  \normalsize\includegraphics[height=1.6ex]{icons/twitter_white}
-  myinternetname
+  \small\includegraphics[height=1.6ex]{icons/twitter_white}
+  \texttt{myinternetname}
 }
 
 % Remove here any contact you do not want to show.
@@ -98,6 +105,7 @@
 		};
 	\end{tikzpicture}
 }
+\setstretch{1.0}
 \begin{frame}
 \maketitle
 \end{frame}
@@ -324,12 +332,13 @@ The theme provides sensible defaults to \emph{emphasize} text,
 }
 
 \begin{frame}{References}
-  Some references to showcase [allowframebreaks] \cite{knuth92,ConcreteMath,Simpson,Er01,greenwade93}
+  Some references to showcase (allowframebreaks) \cite{knuth92,ConcreteMath,Simpson,Er01,greenwade93}
 \end{frame}
 
 \section{Conclusion}
 
 \begin{frame}[standout]
+\centering
   Questions?
 \end{frame}
 
