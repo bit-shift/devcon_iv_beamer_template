@@ -49,10 +49,17 @@
 \setbeamercolor{frame footer}{fg=gray}
 \setbeamertemplate{frame footer}{devcon iv}
 
+% Sets the new fonts.
 \setsansfont{Circular Std Bold}
 \setmonofont{Overpass Mono}
 
+% Sets the default line spacing.
 \setstretch{1.5}
+
+% Sets monospace font for tables and quotes.
+\AtBeginEnvironment{table}{\ttfamily}
+\AtBeginEnvironment{quote}{\ttfamily}
+\AtBeginEnvironment{figure}{\ttfamily}
 
 % If you use the light theme, you need to manually change the
 % icons to `_black`.
@@ -74,7 +81,7 @@
 
 % Remove here any contact you do not want to show.
 \setbeamertemplate{contact}{
-  \vspace*{1mm}
+  \vspace*{2mm}
   \usebeamertemplate{github}\\
   \usebeamertemplate{email}\\
   \usebeamertemplate{twitter}
@@ -229,7 +236,7 @@ The theme provides sensible defaults to \emph{emphasize} text,
     \caption{Largest cities in the world (source: Wikipedia)}
     \begin{tabular}{@{} lr @{}}
       \toprule
-      City & Population\\
+	  \textbf{City} & \textbf{Population}\\
       \midrule
       Mexico City & 20,116,842\\
       Shanghai & 19,210,000\\

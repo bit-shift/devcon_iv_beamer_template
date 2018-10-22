@@ -20,7 +20,7 @@ The following features are present for Beamer:
 
 To do:
 - Use better images for template background, title image and standout background
-- Fonts missing for elements: regular text, quotes, tables.
+- Fonts missing for elements: regular text.
 - Use correct GitHub/Email/Twitter icons depending on theme automatically
 - The text colors are not really white, fix that
  
