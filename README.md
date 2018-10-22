@@ -21,7 +21,6 @@ The following features are present for Beamer:
 To do:
 - Use better images for template background, title image and standout background
 - Use correct GitHub/Email/Twitter icons depending on theme automatically
-- The text colors are not really white, fix that
  
 What will not be done:
 - Diagrams
